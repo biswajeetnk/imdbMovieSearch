@@ -1,0 +1,23 @@
+body
+{
+	background-image: url('bkground.jpg');
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header
+{
+	background-color: #FCFF1C;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	opacity: 0.9;
+}
+
+.container
+{
+	background-color: #9693DA;
+	margin-top: 5%;
+}

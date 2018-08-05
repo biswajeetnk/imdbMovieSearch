@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMDb Movie Search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+	<header>
+		<center><h2>IMDb Movie Search</h2></center>
+	</header><br><br>
+
+	<div class="container"><br>
+		<div class="jumbotron">
+
+			<center><button type="button" class="btn btn-info" id="byID">Search by IMDb ID</button>    <button type="button" class="btn btn-info" id="byTitle">Search by movie title</button>   <button type="button" class="btn btn-info" id="byYear">Search by year</button></center>
+
+			<div id="idSearch">
+				<label>Please enter IMDb ID : </label>
+				<form>
+				<input type="text" class="form-control" id="input-id" placeholder="Imdb ID" autofocus><br>
+				<center><button type="button" class="btn btn-primary" id="btn-idSearch">Search</button>    <button type="reset" class="btn btn-danger" id="btn-reset">Reset</button></center>
+				</form>
+			</div>
+
+			<div id="titleSearch">
+				<label>Please enter movie title : </label>
+				<form>
+				<input type="text" class="form-control" id="input-title" placeholder="Movie title"><br>
+				<center><button type="button" class="btn btn-primary" id="btn-titleSearch">Search</button>    <button type="reset" class="btn btn-danger" id="btn-reset">Reset</button></center>
+				</form>
+			</div>
+			
+			<div id="yearSearch">
+				<label>Please enter movie title : </label>
+				<form>
+				<input type="text" class="form-control" id="input-title2" placeholder="Movie title"><br>
+
+				<label>Please enter year : </label>
+				<input type="text" class="form-control" id="input-year" placeholder="Movie Year"><br>
+
+				<center><button type="button" class="btn btn-primary" id="btn-yearSearch">Search</button>    <button type="reset" class="btn btn-danger" id="btn-reset">Reset</button></center>
+				</form>
+			</div><br>
+
+			<div id="showData">
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<tr>
+								<center><img src="not-found.png" id="movieImage" class="img-responsive"></center><br>
+							</tr>
+
+							<tr>
+									<td><b>Plot : </b></td>
+									<td id="plot"></td>
+							</tr>
+
+							<tr>
+									<td><b>Name of the movie : </b></td>
+									<td id="name"></td>
+							</tr>
+
+							<tr>
+									<td><b>Year of release : </b></td>
+									<td id="year"></td>
+							</tr>
+
+							<tr>
+									<td><b>Production House : </b></td>
+									<td id="prodHouse"></td>
+							</tr>
+
+							<tr>
+									<td><b>Language : </b></td>
+									<td id="lang"></td>
+							</tr>
+
+							<tr>
+									<td><b>Country : </b></td>
+									<td id="country"></td>
+							</tr>
+
+							<tr>
+									<td><b>Released : </b></td>
+									<td id="release"></td>
+							</tr>
+
+							<tr>
+									<td><b>Run Time : </b></td>
+									<td id="runTime"></td>
+							</tr>
+
+							<tr>
+									<td><b>Actors : </b></td>
+									<td id="actor"></td>
+							</tr>
+
+							<tr>
+									<td><b>Director : </b></td>
+									<td id="director"></td>
+							</tr>
+
+							<tr>
+									<td><b>Writer : </b></td>
+									<td id="writer"></td>
+							</tr>
+
+							<tr>
+									<td><b>Awards : </b></td>
+									<td id="awards"></td>
+							</tr>
+
+							<tr>
+									<td><b>BoxOffice Collection : </b></td>
+									<td id="boxOffice"></td>
+							</tr>
+
+							<tr>
+									<td><b>IMDb ID : </b></td>
+									<td id="imdbId"></td>
+							</tr>
+
+							<tr>
+									<td><b>IMDb Rating : </b></td>
+									<td id="imdbRate"></td>
+							</tr>
+
+							<tr>
+									<td><b>IMDb Votes : </b></td>
+									<td id="imdbVotes"></td>
+							</tr>	
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+</html>
